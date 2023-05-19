@@ -1,0 +1,16 @@
+/* grid setting*/
+.grid-2 {
+    display: grid;
+    grid-template-columns: 5050%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 33%33%33%;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 25%25%25%25%;
+}
+/*end grid setting*/
