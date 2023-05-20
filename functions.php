@@ -88,3 +88,5 @@ function register_acf_blocks() {
     return $value;
 }
 add_filter('acf/format_value', 'remove_wysiwyg_auto_p_tags', 10, 3);
+
+remove_filter('acf_the_content', 'wpautop');
