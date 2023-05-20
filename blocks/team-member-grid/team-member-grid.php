@@ -38,10 +38,8 @@ $reviewer = get_sub_field('reviewer');
 $imageID = $profileImage['id']; 
     $imageURL = wp_get_attachment_image_src($imageID, 'full')[0]; 
     $imageAlt = get_post_meta($imageID, '_wp_attachment_image_alt', true);  ?>
-    <figure>
-        <img src="<?php echo $imageURL ?>" alt="<?php echo esc_attr__($imageAlt) ?>">
-    </figure>
-    <p class="text-white font-bold"><?php echo esc_attr($name) ?></p>
+        <img src="<?php echo $imageURL ?>" alt="<?php echo esc_attr__($imageAlt) ?>" class="rounded-lg">
+    <p class="font-bold text-white"><?php echo esc_attr($name) ?></p>
     <a href="tel:<?php echo esc_attr($phoneNumber) ?>"><?php echo esc_attr($phoneNumber) ?></a>
    <?php if ($positionShow) { ?>
 <p><?php echo esc_attr($position) ?></p>

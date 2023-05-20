@@ -17,9 +17,8 @@ add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form'
 function argo_theme_scripts()
 {
   wp_register_style( 'argo-style', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'), 'all' );
-
-  wp_enqueue_style( 'tailwind', get_template_directory_uri() . '/assets/tailwind.css' );
   wp_enqueue_style('argo-style');
+  wp_enqueue_style( 'tailwind-styles', get_template_directory_uri() . '/tailwind.css' );
 
 }
 
